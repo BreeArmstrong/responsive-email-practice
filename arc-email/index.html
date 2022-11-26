@@ -1,77 +1,188 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!-- xhtml is preferred over html5 -->
+  <!-- xhtml is preferred over html5 -->
 
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARC TAC Redesign - Test</title>
     <!-- Reset style for the email templates -->
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
-        body {
-            margin: 0;
-        }
+      body {
+        margin: 0;
+      }
 
-        table {
-            border-spacing: 0;
-            width: 100%;
-        }
+      table {
+        border-spacing: 0;
+        width: 100%;
+      }
 
-        td {
-            padding: 0;
-        }
+      td {
+        padding: 0;
+      }
 
-        img {
-            border: 0;
-        }
-        .wrapper {
-            width: 100%;
-            table-layout: fixed;
-            padding-bottom: 60px;
-            background-color: #121416;
+      img {
+        border: 0;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        padding-bottom: 60px;
+        background-color: #121416;
+      }
+      .main {
+        font-size: 0;
+        border-spacing: 0;
+        font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+        color: #2a2b2c;
+        background-color: #fff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+      }
 
-        }
-        .main {
-            font-size: 0;
-            border-spacing: 0;
-            font-family: SourceSansPro-Regular,Arial,Helvetica,sans-serif;
-            color: #2a2b2c;
-            background-color: #fff;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
+      .background-header {
+        max-width: 100%;
+        border-radius: 5px;
+        height: 155px;
+        z-index: 0;
+      }
+      .tac-header {
+        color: white;
+        z-index: 3;
+        vertical-align: middle;
+        text-align: center;
+        margin: auto;
+      }
+
+      .tac-header p,
+      .tac-header h2 {
+        margin: 0;
+      }
+
+      .tac-header p {
+        font-size: 12px;
+      }
+
+      .tac-header h2 {
+        font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <center class="wrapper">
-
-        <table class="main" width="100%">
-            <!-- Logo top section -->
-            <tr>
-                <td style="padding-top: 20px">
-                    <a href="#"><img src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-m-black.png" alt="ARC Logo" title="ARC Logo" width="45" style="max-width: 45px;"></a>
-                    <p style="font-size: 16px; margin: 5px 0 10px">Travel Agent Communications</p>
+      <table class="main" width="100%">
+        <!-- Logo top section -->
+        <tr>
+          <td>
+            <a href="#"
+              ><img
+                src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-m-black.png"
+                alt="ARC Logo"
+                title="ARC Logo"
+                width="45"
+                style="max-width: 45px"
+            /></a>
+            <p style="font-size: 16px; margin: 5px 0 10px">
+              Travel Agent Communications
+            </p>
+          </td>
+        </tr>
+        <!-- Main banner and TAC date -->
+        <tr>
+          <td>
+            <table class="background-header">
+              <tr>
+                <td style="padding-bottom: 25px">
+                  <!-- I cheated and used an image but want to learn how to do the overlay thing with just html and css -->
+                  <a href="#"
+                    ><img
+                      class="background-header"
+                      src="https://www2.arccorp.com/globalassets/email/header-image.png"
+                      alt=""
+                      width="520"
+                  /></a>
                 </td>
-            </tr>
-            <!-- Main banner and TAC date -->
-            <!-- Main sections for TAC -->
-            <!-- Tip of the Week and Events -->
-            <!-- Footer -->
-            <!-- Socials -->
-        </table> 
-        <!-- End Main Class -->
-
-    </center> 
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table
+              class="tac-header"
+              width="450"
+              style="
+                vertical-align: middle;
+                max-width: 450px;
+                border-radius: 5px;
+                margin-top: -58px;
+              "
+            >
+              <tr>
+                <td>
+                  <p style="font-size: 16px">PED 10/30/22</p>
+                  <h2 style="font-size: 20px">Important Operational Updates</h2>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Main sections for TAC -->
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td class="two-col">
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="tac-icon">
+                          <tr>
+                            <td>
+                                <img src="" alt="">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="tac-icon">
+                          <tr>
+                            <td>
+                                <img src="" alt="">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td
+            height="1"
+            width="490px"
+            style="max-width: 100%; background-color: #2a2b2c"
+          ></td>
+        </tr>
+        <!-- Tip of the Week and Events -->
+        <!-- Footer -->
+        <!-- Socials -->
+      </table>
+      <!-- End Main Class -->
+    </center>
     <!-- End center Wrapper -->
-
-</body>
-
+  </body>
 </html>
